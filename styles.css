@@ -1,0 +1,30 @@
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.image-section{
+    position: relative;
+    color: white;
+    width: 33%;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-credit {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.signup-section{
+    width: 67%;
+    height: auto;
+}
