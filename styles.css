@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: Norse;
+    src: url("Norse-Bold.otf") format("opentype");
+}
+
 body{
     display: flex;
     flex-direction: row;
@@ -7,7 +12,7 @@ body{
 .image-section{
     position: relative;
     color: white;
-    width: 33%;
+    width: 30%;
 }
 
 .image-section img{
@@ -20,11 +25,41 @@ body{
     position: absolute;
     bottom: 5px;
     width: 100%;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
 }
 
+.image-section > .image-text{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 117px;
+    top: 15%;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.image-text > h1{
+    font-size: 80px;
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    height: 100%;
+    font-family: Norse,'Times New Roman', Times, serif;
+    margin-right: 50px;
+
+}
+
+.image-text > img{
+    width: auto;
+    height: 100px;
+   
+}
+
 .signup-section{
-    width: 67%;
+    width: 100%;
     height: auto;
 }
