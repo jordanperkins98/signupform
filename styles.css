@@ -8,9 +8,13 @@
 
 html{
     font-size: 24px;
+    margin: 0;
+    padding: 0;
 }
 
 body{
+    padding: 0;
+    margin: 0; 
     display: flex;
     flex-direction: row;
     font-family: 'Roboto', sans-serif
@@ -20,13 +24,13 @@ body{
 .image-section{
     position: relative;
     color: white;
-    width: 27.5%;
+    width: 28%;
 }
 
 .image-section img{
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    
 }
 
 .image-credit {
@@ -66,7 +70,7 @@ body{
 }
 
 .signup-section{
-    width: 72.5%;
+    width: 72%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -78,7 +82,7 @@ body{
     padding-top: 6%;
     font-weight: 500;
     padding-bottom: 3%;
-    background-color: #f8f8f8;
+    background-color: #f8f8f891;
 }
 
 p.main, p.secondary{
@@ -93,9 +97,44 @@ p.main, p.secondary{
 }
 
 .signup-section > .bottom-section {
-    
+    display: flex;
+    flex-direction: column;
     background-color: #f8f8f891;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 40%;
+    justify-content: flex-start;
+    height: 100%;
+
 
 }
 
 
+.bottom-section > button {
+    appearance: none;
+    padding: 0;
+    padding: 0.5rem;
+    background-color: #344e28;
+    box-shadow: 4px 5px 4px 0px rgba(148,148,148,0.20);
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    color: white;
+    cursor: pointer;
+    font-size: 0.65rem;
+    width: 12vw;
+}
+
+.bottom-section > p {
+    font-size: 0.65rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.bottom-section > p > a {
+    color: #344e28;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: 500;
+    font-family: inherit;
+}
