@@ -69,17 +69,30 @@ body{
 
 }
 
-.name{
+
+.form-row {
+    margin-bottom: 40px;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    max-width: 200px;
+    flex-wrap: wrap;
+  }
+
+.form-row input[type='text'],
+  .form-row input[type='email'],   
+  .form-row select,                 
+  .form-row textarea {
+    width: 250px;
+    height: initial;
 }
 
-.name > label{
-    font-size: 0.6rem;
-    font-weight: 500;
-    font-family: inherit;
-}
+.form-row label {
+    text-align: left;
+    font-size: 0.65rem;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
 
 .image-text > img{
     width: auto;
