@@ -13,7 +13,7 @@
     <div class="image-section">
       <img src="./daniel-olah-qG_YrnZq0A8-unsplash.jpg" alt="landscape image with oak tree in the middle">
       <div class="image-text">
-        <img src="odin-lined.png">
+        <img alt="odin project logo" src="odin-lined.png">
         <h1>ODIN</h1> 
         <p></p>
       </div>  
@@ -28,19 +28,48 @@
           <p class="main">Let's do this!</p>
           <form>
             <div class="form-row">
-              <label for="fname">FIRST NAME</label>
-              <input type="text" 
-               id="fname"
-               required>
+              <div class="form-item">
+                  <label for="fname">FIRST NAME</label>
+                  <input type="text" id="fname" required>
+              </div>           
+              <div class="form-item">
+                  <label for="lname">LAST NAME</label>
+                  <input type="text" id="lname" required>
+              </div>  
             </div>
-
+            <div class="form-row">
+              <div class="form-item">
+                  <label for="email">EMAIL</label>
+                  <input type="email"
+                         id="email"
+                         required>
+              </div>
+              <div class="form-item">
+                  <label for="phone">PHONE NUMBER</label>
+                  <input type="tel"
+                         id="phone">
+              </div>  
+            </div>
+            <div class="form-row">
+                <div class="form-item">
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password"
+                           id="pwd"
+                           required>
+                </div>
+                <div class="form-item">
+                    <label for="pwdconfirm">CONFIRM PASSWORD</label>
+                    <input type="password"
+                           id="pwdconfirm">
+                </div>
+            </div>
           </form>
         </div>
+        
         <div class="bottom-section">
           <button type="submit">Create Account</button>
           <p >Already have an account? <a href="#">Log in</a></p>
-        </div>  
-    </div>
+        </div>
 </body>
 </html>
 

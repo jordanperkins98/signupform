@@ -4,7 +4,7 @@
     src: url("Norse-Bold.otf") format("opentype");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
 
 html{
     font-size: 24px;
@@ -17,7 +17,8 @@ body{
     margin: 0; 
     display: flex;
     flex-direction: row;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
     
 }
 
@@ -29,7 +30,7 @@ body{
 
 .image-section img{
     width: 100%;
-    height: 107%;
+    height: 107.9%;
     
 }
 
@@ -71,25 +72,44 @@ body{
 
 
 .form-row {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 100px;
   }
 
-.form-row input[type='text'],
-  .form-row input[type='email'],   
+.form-item{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+  .form-row input[type='text'],
+  .form-row input[type='email'],
+  .form-row input[type='tel'],
+  .form-row input[type='password'],
   .form-row select,                 
   .form-row textarea {
-    width: 250px;
-    height: initial;
+
+      width: 250px;
+      height: 24px;
+      margin-top: .15rem;
+      appearance: none;
+      border: 0.1px solid rgba(65, 66, 73, 0.5);
+      border-radius: 3px;
+
 }
 
 .form-row label {
+    font-family: inherit;
+    font-weight: 500;
+    color: #202A38;
     text-align: left;
-    font-size: 0.65rem;
-    width: 120px;
+    font-size: 0.58rem;
+    letter-spacing: 2px;
+    width: 200px;
     margin-top: 7px;
     padding-right: 20px;
   }
@@ -108,23 +128,23 @@ body{
 }
 
 .signup-section > .top-section {
-    padding-left: 5%;
-    padding-right: 40%;
-    padding-top: 6%;
     font-weight: 500;
-    padding-bottom: 3%;
+    padding: 6% 40% 3% 4%;
+    width: 750px;
     background-color: #f8f8f891;
 }
 
 p.main, p.secondary{
     font-size: 1.1rem;
+    color: #202A38;
     font-weight: 500;
 }
 
 .signup-section > .middle-section {
-    padding-left: 5%;
+    padding-left: 4%;
     padding-right: 40%;
-    box-shadow: 0px 5px 4px 0px rgba(148,148,148,0.20);
+    box-shadow: 5px 5px 4px 0 rgba(148,148,148,0.720);
+    padding-bottom: 20px;
 }
 
 .signup-section > .bottom-section {
@@ -132,10 +152,9 @@ p.main, p.secondary{
     flex-direction: column;
     background-color: #f8f8f891;
     padding-top: 5%;
-    padding-left: 5%;
+    padding-left: 4%;
     padding-right: 40%;
     justify-content: flex-start;
-    height: 100%;
 
 
 }
@@ -143,10 +162,9 @@ p.main, p.secondary{
 
 .bottom-section > button {
     appearance: none;
-    padding: 0;
     padding: 0.5rem;
     background-color: #596D48;
-    box-shadow: 4px 5px 4px 0px rgba(148,148,148,0.20);
+    box-shadow: 4px 5px 4px 0 rgba(148,148,148,0.20);
     border: none;
     border-radius: 6px;
     font-family: inherit;
