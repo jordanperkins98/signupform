@@ -101,6 +101,17 @@ body{
 
 }
 
+.form-row input[type='text']:focus-visible,
+.form-row input[type='email']:focus-visible,
+.form-row input[type='tel']:focus-visible,
+.form-row input[type='password']:focus-visible,
+.form-row select:focus-visible,
+.form-row textarea:focus-visible{
+      outline: none;
+      border: 1px solid #0e69e0;
+      box-shadow: 0 5px 4px 0 rgba(148,148,148,0.60);;
+  }
+
 .form-row label {
     font-family: inherit;
     font-weight: 500;
@@ -186,3 +197,10 @@ p.main, p.secondary{
     font-weight: 500;
     font-family: inherit;
 }
+
+/* Form css
+
+
+
+
+
