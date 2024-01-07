@@ -8,4 +8,6 @@ This project is a signup form that was created based on a design file image from
 - Flexbox: The layout of the form is implemented using flexbox, allowing for flexible and responsive design.
 - Pseudo classes: Pseudo classes are used to enhance the user experience by providing visual feedback when interacting with the form elements.
 
+![Image of the sign up form](./Screenshot%20from%202024-01-07%2015-40-51.png)
+
 
