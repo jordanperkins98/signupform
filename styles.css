@@ -112,6 +112,39 @@ body{
       box-shadow: 0 5px 4px 0 rgba(148,148,148,0.60);;
   }
 
+
+.form-row input[type='password']:invalid{
+    outline: none;
+    border: 1px solid #cc0d0d;
+    box-shadow: 0 5px 4px 0 rgba(148,148,148,0.60);
+}
+
+.form-row input[type='password']:invalid + #passwordinvalid{
+        visibility: visible;
+        color: #cc0d0d;
+        font-family: inherit;
+        font-size: 0.5rem;
+        padding-top: 3px;
+
+}
+
+.form-row input[type='password']:valid + #passwordinvalid{
+    visibility: hidden;
+    font-size: 0.5rem;
+
+
+}
+
+
+.form-row input[type='password']:focus-visible:invalid{
+    outline: none;
+    border: 1px solid #cc0d0d;
+    box-shadow: 0 5px 4px 0 rgba(148,148,148,0.60);
+
+}
+
+
+
 .form-row label {
     font-family: inherit;
     font-weight: 500;

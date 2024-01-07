@@ -54,13 +54,16 @@
                 <div class="form-item">
                     <label for="pwd">PASSWORD</label>
                     <input type="password"
-                           id="pwd"
+                           id="pwd" minlength="8"
                            required>
+                    <span id="passwordinvalid"> * Passwords do not match</span>
+
                 </div>
                 <div class="form-item">
                     <label for="pwdconfirm">CONFIRM PASSWORD</label>
                     <input type="password"
-                           id="pwdconfirm">
+                           id="pwdconfirm" minlength="8" required>
+
                 </div>
             </div>
           </form>
